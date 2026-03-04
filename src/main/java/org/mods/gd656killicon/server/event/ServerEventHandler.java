@@ -768,7 +768,7 @@ public class ServerEventHandler {
     private static boolean checkBlinded(LivingEntity entity) {
         if (entity.hasEffect(MobEffects.BLINDNESS) || entity.hasEffect(MobEffects.CONFUSION) || entity.hasEffect(MobEffects.DARKNESS)) return true;
         try {
-            net.minecraft.world.effect.MobEffect blinded = net.minecraftforge.registries.ForgeRegistries.MOB_EFFECTS.getValue(net.minecraft.resources.ResourceLocation.fromNamespaceAndPath("lrtactical", "blinded"));
+            net.minecraft.world.effect.MobEffect blinded = net.minecraftforge.registries.ForgeRegistries.MOB_EFFECTS.getValue(new net.minecraft.resources.ResourceLocation("lrtactical", "blinded"));
             return blinded != null && entity.hasEffect(blinded);
         } catch (Exception ignored) {}
         return false;
