@@ -17,7 +17,7 @@ public class NetworkHandler {
 
     public static void register() {
         SimpleChannel net = NetworkRegistry.newSimpleChannel(
-                ResourceLocation.fromNamespaceAndPath(Gd656killicon.MODID, "main"),
+                new ResourceLocation(Gd656killicon.MODID, "main"),
                 () -> "1.0",
                 s -> true,
                 s -> true

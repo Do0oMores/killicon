@@ -19,7 +19,7 @@ import java.net.URI;
 
 public class MainConfigScreen extends Screen {
     private final Screen parent;
-    private static final ResourceLocation BACKGROUND_TEXTURE = ResourceLocation.fromNamespaceAndPath("minecraft", "textures/block/gilded_blackstone.png");
+    private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation("minecraft", "textures/block/gilded_blackstone.png");
     private final ConfigScreenHeader header;
     private boolean quickScoreboardMode = false;
     
